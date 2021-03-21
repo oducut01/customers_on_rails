@@ -1,0 +1,22 @@
+<div class="column">
+  <div class="card">
+    <div class="card-image">
+      <% if customer.image.present? %>
+        <div class="card-image">
+          <figure class="image">
+            <p><%= image_tag customer.image  %></p>
+          </figure>
+        </div>
+      <% end %>
+    </div>
+    <div class="card-content">
+      <p class="title is-4">
+        <%= link_to customer.name, customer %>
+      </p>
+      <p class="subtitle is-6">Phone Number: <%= customer.phone %></p>
+      <p class="subtitle is-6">Email Address: <%= customer.email %></p>
+      <p class="subtitle is-6">Notes: <%= customer.notes %></p>
+    </div>
+
+  </div>
+</div>
