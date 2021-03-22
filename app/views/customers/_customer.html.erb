@@ -4,7 +4,7 @@
       <% if customer.image.present? %>
         <div class="card-image">
           <figure class="image">
-            <p><%= image_tag customer.image  %></p>
+            <p><%= image_tag customer.image %></p>
           </figure>
         </div>
       <% end %>
@@ -17,6 +17,5 @@
       <p class="subtitle is-6">Email Address: <%= customer.email %></p>
       <p class="subtitle is-6">Notes: <%= customer.notes %></p>
     </div>
-
   </div>
 </div>
